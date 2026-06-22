@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цэцэгт ногоон хөндий</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="main-header">
+    <h1>Цэцэгт ногоон хөндий</h1>
+    <p>Мод, цэцэг, бут сөөг, бордоо</p>
+</header>
+
+<section id="categoryPage">
+    <div class="page-title">
+        <h2>Төрөл сонгох</h2>
+        <p>Доорх ангиллаас сонгоод бүтээгдэхүүний мэдээлэл, үнэ, үлдэгдлийг хараарай.</p>
+    </div>
+
+    <main class="category-grid" id="categoryGrid"></main>
+</section>
+
+<section id="productPage" class="hidden">
+    <header class="sub-header">
+        <button class="back-button" onclick="showCategories()">← Буцах</button>
+        <h1 id="categoryTitle"></h1>
+        <p>Үнэ, тайлбар, үлдэгдэл</p>
+    </header>
+
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Бүтээгдэхүүн хайх...">
+    </div>
+
+    <main class="product-grid" id="productGrid"></main>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
